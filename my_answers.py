@@ -91,7 +91,7 @@ class NeuralNetwork(object):
 
         # TODO: Output error - Replace this value with your calculations.
         error = y - final_outputs # Output layer error is the difference between desired target and actual output.
-        error = error[:,None]
+        error = error[:,None] #corrige as dimensões do objeto
         output_error_term = error # derivada da func ativacao do output e 1
         
         # TODO: Calculate the hidden layer's contribution to the error
